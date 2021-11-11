@@ -1,0 +1,252 @@
+@charset "UTF-8";
+/*
+共通
+*/
+body{
+    line-height: 1.7;
+
+    font-family : "ヒラギノ角ゴ ProN" , sans-serif;
+}
+a{
+    text-decoration: none;
+}
+img {
+    max-width: 100%;
+}
+
+.wrapper{
+    margin-top: 20px;
+    margin-right: 60px;
+    margin-left: 60px;
+    margin-bottom: 20px;
+}
+
+
+/*
+フッターとメニュー
+*/
+.main_menu {
+    display: flex;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    margin-top: 34px;
+    list-style: none;
+}
+
+.main_menu li {
+    margin-left: 36px;
+   
+}
+.main_menu a:hover{
+    color: #AAA
+}
+
+.page_header h1{
+    margin-left: 20px;
+}
+.page_header {
+    display: flex;
+}
+.main_menu{
+    margin-left: auto;
+    margin-right: 20px;
+}
+.header{
+    background-color:aliceblue;
+
+    height : 180px;
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+}
+
+
+/*
+タイトル
+*/
+.title{
+    text-align:center;
+    margin-bottom: 40px;
+}
+
+/*
+フッター
+*/
+footer p{
+    text-align:right;
+    margin-right: 20px;
+}
+
+footer{
+    background-color: #eee;
+}
+
+/*
+コンテンツ用
+*/
+.content h2{
+    padding: 8px 8px;
+    width: 400px;
+    border-bottom: 4px #54DEFD solid;
+}
+main{
+    width: 70%;
+}
+side{
+    width: 30%;   
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.content img{
+    max-width: 500px;
+}
+
+
+/*
+サイドメニュー用
+*/
+.side_title{
+    font-size: 1em;
+    padding: 8px 8px;
+    border-bottom: 2px #54DEFD solid;
+}
+
+.side_menu{
+    list-style: none;
+    padding-left: 0px;
+}
+
+.side_menu a{
+    padding: 10px;
+    display: block;
+
+}
+.side_menu li{
+    border-bottom: 1px #ddd solid;
+}
+.side_menu li:hover{
+    color: #aaa;
+}
+side p{
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+
+/*
+ログイン用
+*/
+login table {
+    margin-left: auto;
+    margin-right: auto;
+}
+login input[type="submit"]{
+    width: 50px; 
+    height: 35px;
+}
+login input[type="password"]{
+    width: 200px; 
+    height: 30px;
+}
+
+/*
+グリッドメニュー用
+*/
+.grid_menu{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    margin-top: 2%;
+    margin-bottom: 2%;
+
+}
+.grid_menu p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+.item:hover img{
+    opacity: 0.6;
+    transition-duration: 0.1s;
+}
+
+/*
+スマホ用
+*/
+@media (max-width: 900px){
+
+    .content{
+        flex-direction: column;
+    }
+    .header{
+        height: auto;
+    }
+    .title{
+        font-size: 0.8rem;
+    }
+    .header h1{
+        font-size: 1.5rem;
+    }
+    .content h2{
+        font-size: 1.2rem;
+    }
+    side{
+        width:100%;
+    }
+    main{
+        width: 100%;
+    }
+    .wrapper{
+        margin-top: 2px;
+        margin-right: 5px;
+        margin-left: 2px;
+        margin-bottom: 5px;
+    }
+    
+    .content h2{
+        width: auto;
+        border-bottom: 4px #54DEFD solid;
+    }
+    .page_header {
+        display: block;
+    }
+    
+    .main_menu{
+        justify-content: space-between;
+    }
+    
+    .main_menu li {
+        margin-left: 36px;
+        margin-right: 36px;
+    }
+    .main_menu a{
+        font-size: 1rem;
+    }
+    .content img{
+        width: 100%;
+    }
+    .page_header h1{
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .side_title{
+    font-size: 1em;
+    padding: 8px 8px;
+    border: 2px #54DEFD solid;
+    }
+    
+    .grid_menu{
+    display: grid;
+    gap: 10px;
+    grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 355px){  
+    login input[type="password"]{
+    width: auto; 
+    }
+}

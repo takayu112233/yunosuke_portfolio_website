@@ -61,6 +61,10 @@ function read_manu()
 		            C#</br>
 		            .NET Framework</br>
                 </p>
+                <h2>ソースコード</h2>
+                <p>
+		            <a href="https://github.com/takayu112233/FeliCa-attendance-registration-system" target="_blank">GitHub</a>にアップロードされております。
+                </p>
                 <h2>担当箇所</h2>
                 <p>
 		            DB設計、画面設計、プログラミングを担当しました。</br>

@@ -57,6 +57,10 @@ function read_manu()
 		            C#</br>
 		            .NET Framework</br>
                 </p>
+                <h2>ソースコード</h2>
+                <p>
+		            <a href="https://github.com/takayu112233/Local-attendance-registration-system" target="_blank">GitHub</a>にアップロードされております。
+                </p>
                 <h2>授業を複数登録可能</h2>
                 <img src="../img/felica_offline/setup.png">
                 <img src="../img/felica_offline/wait.png">

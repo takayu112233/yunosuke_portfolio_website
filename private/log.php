@@ -10,7 +10,7 @@ function show_msg()
         $db = new libDB();
         $pdo = $db->getPDO();
         
-        $sql = $pdo->prepare("SELECT * FROM view_log WHERE date ORDER BY date ASC;"); 
+        $sql = $pdo->prepare("SELECT * FROM view_log WHERE date ORDER BY date DESC;"); 
 
         $sql->execute();
         $result = $sql->fetchAll();

@@ -10,7 +10,7 @@ function show_msg()
         $db = new libDB();
         $pdo = $db->getPDO();
         
-        $sql = $pdo->prepare("SELECT * from view_log;"); 
+        $sql = $pdo->prepare("SELECT * FROM view_log WHERE date ORDER BY date ASC;"); 
 
         $sql->execute();
         $result = $sql->fetchAll();
@@ -18,7 +18,7 @@ function show_msg()
             echo "ERR<br>";
         }else{
             foreach($result as $loop){
-            echo "<br>" . $loop["log_id"] . " " . $loop["log_date"] . " " . $loop["key_memo"];
+            echo "<br>" . $loop["log_id"] . " " . $loop["date"] . " " . $loop["key_memo"];
         }
     }
 }

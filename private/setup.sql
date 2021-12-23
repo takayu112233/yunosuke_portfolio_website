@@ -15,16 +15,16 @@ PRIMARY KEY (key_id)
 CREATE TABLE log_table(
 log_id INT AUTO_INCREMENT,
 key_id INT,
-log_date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
 PRIMARY KEY (log_id),
 FOREIGN KEY(key_id) references key_table(key_id)
 );
 
 CREATE VIEW view_log AS 
-SELECT log_id , log_date , key_table.key_memo
+SELECT log_id , date , key_table.key_memo
 FROM log_table
 INNER JOIN key_table
 ON log_table.key_id = key_table.key_id
-WHERE log_date;
+WHERE date;
 
 INSERT INTO key_table(key_value,key_memo) VALUES ('test', 'テスト用');

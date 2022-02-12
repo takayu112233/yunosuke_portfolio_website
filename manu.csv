@@ -1,10 +1,10 @@
-"照明個別制御システム","img/sw_led/sw_led_app.png","content/sw_led.php"
-"ポケット学生便覧「Pokebi」","img/pokebi/pokebi.png","content/pokebi.php"
-"入場者管理システム(DB版)","img/felica/felica_thumbnail.png","content/felica_db.php"
-"出席管理システム(オフライン版)","img/felica_offline/felica_offline.png","content/felica_offline.php"
-"Mini HEMS System","img/minihems/minihems.png","content/minihems.php"
-"死活監視ソフトウェア","img/monitor/monitor.png","content/monitor.php"
-"レリーズタイマー","img/release_timer/release_timer.png","content/release_timer.php"
-"私について","img/my/my.png","content/my.php"
-"GitHub","img/github.png","https://github.com/takayu112233"
-"更新履歴","img/brown.png","content/change_log.php"
+"照明個別制御システム","img/sw_led/sw_led_app.png","content/sw_led.php",0
+"ポケット学生便覧「Pokebi」","img/pokebi/pokebi.png","content/pokebi.php",0
+"入場者管理システム(DB版)","img/felica/felica_thumbnail.png","content/felica_db.php",0
+"出席管理システム(オフライン版)","img/felica_offline/felica_offline.png","content/felica_offline.php",0
+"Mini HEMS System","img/minihems/minihems.png","content/minihems.php",0
+"死活監視ソフトウェア","img/monitor/monitor.png","content/monitor.php",0
+"レリーズタイマー","img/release_timer/release_timer.png","content/release_timer.php",0
+"私について","img/my/my.png","content/my.php",0
+"GitHub","img/github.png","https://github.com/takayu112233",1
+"更新履歴","img/brown.png","content/change_log.php",0

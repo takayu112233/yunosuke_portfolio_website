@@ -10,10 +10,12 @@ function read_manu()
     echo("\n<!– php 処理 開始 –>\n");
     $handle = fopen('../manu.csv', 'r');
     while (($row = fgetcsv($handle, 4096)) !== false) {
-        list($name, $imgurl, $url) = $row;
-
-        echo "<li><a href=\"../" . $url . "\">" . $name . "</a></li>"."\n";
-
+        list($name, $imgurl, $url, $external) = $row;
+        if($external == 1){
+            echo "<li><a href=\"" . $url . "\" target=\"_blank\">" . $name . "</a></li>"."\n";
+        }else{
+            echo "<li><a href=\"../" . $url . "\">" . $name . "</a></li>"."\n";
+        }
     }
     fclose($handle);
     echo("\n<!– php 処理 終了 –>\n");

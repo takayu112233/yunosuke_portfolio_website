@@ -10,10 +10,12 @@ function read_manu()
     echo("\n<!– php 処理 開始 –>\n");
     $handle = fopen('../manu.csv', 'r');
     while (($row = fgetcsv($handle, 4096)) !== false) {
-        list($name, $imgurl, $url) = $row;
-
-        echo "<li><a href=\"../" . $url . "\">" . $name . "</a></li>"."\n";
-
+        list($name, $imgurl, $url, $external) = $row;
+        if($external == 1){
+            echo "<li><a href=\"" . $url . "\" target=\"_blank\">" . $name . "</a></li>"."\n";
+        }else{
+            echo "<li><a href=\"../" . $url . "\">" . $name . "</a></li>"."\n";
+        }
     }
     fclose($handle);
     echo("\n<!– php 処理 終了 –>\n");
@@ -58,15 +60,17 @@ function read_manu()
                 <img src="../img/felica_offline/wait.png">
                 <p>
 		            起動時に授業内容と授業時間を設定する事ができます。</br>
-		            設定項目はファイルに保存する事が可能です。</br>
+		            設定内容はファイルに保存する事ができます。</br>
                 </p>
+
                 <h2>学生証をかざすだけで出席</h2>
                 <img src="../img/felica_offline/read.png">
                 <p>
-		            felicaリーダーに学生証をかざす事で出席登録できます。</br>
+                    FeliCaリーダーに学生証をかざす事で出席登録できます。</br>
                     読取成功時、大きく学籍番号が表示されます。</br>
 		            入室時にタッチする事で点呼を省略する事が可能です。</br>
                 </p>
+
                 <h2>出席情報はCSV出力可能</h2>
                 <img src="../img/felica_offline/csv_out.png">
                 <p>

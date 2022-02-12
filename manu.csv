@@ -5,5 +5,6 @@
 "Mini HEMS System","img/minihems/minihems.png","content/minihems.php"
 "死活監視ソフトウェア","img/monitor/monitor.png","content/monitor.php"
 "レリーズタイマー","img/release_timer/release_timer.png","content/release_timer.php"
+"私について","img/my/my.png","content/my.php"
 "GitHub","img/github.png","https://github.com/takayu112233"
 "更新履歴","img/brown.png","content/change_log.php"

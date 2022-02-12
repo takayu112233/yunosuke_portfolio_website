@@ -48,16 +48,43 @@ function read_manu()
                 <h2>名前</h2>
                 <p>
 		            高橋 祐之介</br>
+                    
+                    <img src="../img/my/my2.png">
                 </p>
+
+                <h2>保有資格・免許</h2>
+                応用情報技術者試験</br>
+                基本情報技術者試験</br>
+                ITパスポート試験</br>
+                Microsoft Office Specialist Excel 2019</br>
+                Microsoft Office Specialist Word 2019</br>
+                大型自動車第一種運転免許</br>
+                普通自動車第一種運転免許</br>
+                普通自動二輪車免許</br>
+                </p>
+
+                <h2>学生時代に学んできた言語</h2>
+                <p>
+                    HTML, CSS, JavaScript, jQuery, PHP, Python, C#, java
+                </p>
+
+                <h2>得意な分野</h2>
+                <p>
+                    業務効率化ツールの作成等
+                </p>
+
                 <h2>趣味</h2>
                 <p>
-		            バイク/電子工作</br>
+		            私の趣味はドライブを行う事です。</br>
+                    バイクはNinja250SLを所持しており、天気のいい日に出かけています。</br>
+                    私の父がバスを所持している関係で、時々、マイクロバスや観光バスを運転しています！</br>
                 </p>
-                <h2>資格</h2>
+
+                <h2>連絡先</h2>
                 <p>
-	                普通自動車第一種運転免許</br>
-	                MOS　Word2019  Excel2019</br>
-	                基本情報技術者試験</br>
+		            takayu112233aa@gmail.com</br>
+                    このサイトに関するお問い合わせは以下のメールアドレスにお送りください</a>
+                    <a href="mailto:takayu112233aa@gmail.com">メーラーを起動します</a>
                 </p>
 
             </main>

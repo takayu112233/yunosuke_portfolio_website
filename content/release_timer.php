@@ -47,12 +47,16 @@ function read_manu()
             <main>
                 <h2>全体写真</h2>
                 <img src="../img/release_timer/timer.png">
+
                 <h2>概要</h2>
                 <p>
 		            キャノン用一眼レフ用のレリーズタイマーです。</br>
 		            </br>
 		            シャッタースピード、インターバル時間、撮影枚数を選択すると自動的に写真が撮影されます。</br>
+                    </br>
+		            このレリーズタイマーはArduino nanoを使用して作成されています。</br>
                 </p>
+                
                 <h2>使用言語</h2>
                 <p>
 		            C++ (Arduino言語)</br>

@@ -50,17 +50,9 @@ function read_manu()
                 <h2>概要</h2>
                 <p>
                     <a href="../content/felica_db.php">DBを使用した入場者管理システム</a>のオフライン版です。</br>
-		            サーバを構築する事無く、パソコンとFeliCaリーダを用意する事で使用できます。</br>
+		            サーバを構築する事無く、Windows搭載パソコンとFeliCaリーダを用意する事で使用できます。</br>
                 </p>
-                <h2>使用言語</h2>
-                <p>
-		            C#</br>
-		            .NET Framework</br>
-                </p>
-                <h2>ソースコード</h2>
-                <p>
-		            <a href="https://github.com/takayu112233/Local-attendance-registration-system" target="_blank">GitHub</a>にアップロードされております。
-                </p>
+
                 <h2>授業を複数登録可能</h2>
                 <img src="../img/felica_offline/setup.png">
                 <img src="../img/felica_offline/wait.png">
@@ -79,6 +71,16 @@ function read_manu()
                 <img src="../img/felica_offline/csv_out.png">
                 <p>
 		            授業終了後、出席情報はCSVファイルに書き出す事が可能です。</br>
+                </p>
+                
+                <h2>使用言語</h2>
+                <p>
+		            C#</br>
+		            .NET Framework</br>
+                </p>
+                <h2>ソースコード</h2>
+                <p>
+		            <a href="https://github.com/takayu112233/Local-attendance-registration-system" target="_blank">GitHub</a>にアップロードされております。
                 </p>
 
             </main>

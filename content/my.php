@@ -82,7 +82,7 @@ function read_manu()
 
                 <h2>連絡先</h2>
                 <p>
-                    このサイトに関するお問い合わせは以下のメールアドレスにお送りください</a>
+                    このサイトに関するお問い合わせは以下のメールアドレスにお送りください</br>
 		            takayu112233aa@gmail.com</br>
                     <a href="mailto:takayu112233aa@gmail.com">メーラーを起動します</a>
                 </p>

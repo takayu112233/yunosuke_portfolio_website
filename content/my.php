@@ -50,9 +50,13 @@ function read_manu()
                 <h2>名前</h2>
                 <p>
 		            高橋 祐之介</br>
-                    
-                    <img src="../img/my/my2.png">
                 </p>
+
+                <h2>写真</h2>
+                </p>
+                <img src="../img/my/my2.png">
+                </p>
+                
 
                 <h2>保有資格・免許</h2>
                 応用情報技術者試験</br>

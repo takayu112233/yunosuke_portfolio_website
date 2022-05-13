@@ -24,6 +24,7 @@ function show_msg()
             foreach($result as $loop){
                 session_regenerate_id(true); 
                 $_SESSION['key'] = $loop["key_value"];
+                $_SESSION['key_id'] = $loop["key_id"];
 
                 $sql = $pdo->prepare("INSERT INTO log_table(key_id) VALUES (:key_id);"); 
                 $sql->bindValue(':key_id', $loop["key_id"], PDO::PARAM_STR);  

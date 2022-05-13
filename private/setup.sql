@@ -27,4 +27,21 @@ INNER JOIN key_table
 ON log_table.key_id = key_table.key_id
 WHERE date;
 
+CREATE TABLE access_log_table(
+log_id INT AUTO_INCREMENT,
+key_id INT,
+access_url varchar(2083),
+date DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+PRIMARY KEY (log_id),
+FOREIGN KEY(key_id) references key_table(key_id)
+);
+
+CREATE VIEW view_accesslog AS 
+SELECT log_id , date , access_url ,  key_table.key_memo
+FROM access_log_table
+INNER JOIN key_table
+ON access_log_table.key_id = key_table.key_id
+WHERE date;
+
+
 INSERT INTO key_table(key_value,key_memo) VALUES ('test', 'テスト用');

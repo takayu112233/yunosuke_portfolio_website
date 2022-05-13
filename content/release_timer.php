@@ -5,6 +5,9 @@ if (!$_SESSION["key"]) {
     header('Location: ../login.php');
 }
 
+require "../embedded/main.php";
+write_log();
+
 function read_manu()
 {
     echo("\n<!– php 処理 開始 –>\n");
